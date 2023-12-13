@@ -1,0 +1,22 @@
+name: map_launcher_example
+description: Demonstrates how to use the map_launcher plugin.
+publish_to: "none"
+
+version: 0.1.0
+
+environment:
+  sdk: '>=2.14.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  map_launcher:
+    path: ../
+  flutter_svg: ^0.21.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

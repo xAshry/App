@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_paypal_native (2.0.0):
+    - Flutter
+    - PayPalCheckout
+  - PayPalCheckout (1.1.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_paypal_native (from `.symlinks/plugins/flutter_paypal_native/ios`)
+
+SPEC REPOS:
+  trunk:
+    - PayPalCheckout
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_paypal_native:
+    :path: ".symlinks/plugins/flutter_paypal_native/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_paypal_native: d6494730ed3d20acbd2192b5baaf485fafc944bc
+  PayPalCheckout: ec442f9026c4ec6eee58f768b3cfd81c0ff569bf
+
+PODFILE CHECKSUM: 0bf79badf7d842c8c15b61aef7f2fdc9d1829ea6
+
+COCOAPODS: 1.12.1

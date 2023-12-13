@@ -1,0 +1,33 @@
+{
+  "name": "flutter_paypal_native",
+  "version": "2.0.0",
+  "summary": "Flutter SDK Lib for Paypal.",
+  "description": "A native implementation for Paypal with flutter..",
+  "homepage": "https://github.com/harrowmykel/flutter_paypal_native",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Your Company": "email@example.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "dependencies": {
+    "Flutter": [
+
+    ],
+    "PayPalCheckout": [
+
+    ]
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
+  },
+  "swift_version": "5.0"
+}
