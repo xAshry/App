@@ -79,6 +79,7 @@ dependencies:
   video_compress: ^3.1.2
   video_player: ^2.8.1
   video_thumbnail: ^0.5.3
+  flutter_inappwebview: ^5.8.0
 
 dependency_overrides:
   webview_flutter: ^4.4.1
