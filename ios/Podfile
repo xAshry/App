@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
@@ -40,23 +40,15 @@ end
 #   end
 # end
 
-post_install do |installer|
-  compiler_flags_key = 'COMPILER_FLAGS'
-  project_path = 'Pods/Pods.xcodeproj'
-
-  project = Xcodeproj::Project.open(project_path)
+def info_post_install(installer)
   installer.pods_project.targets.each do |target|
-    flutter_additional_ios_build_settings(target)
-     target.build_phases.each do |build_phase|
-        if build_phase.is_a?(Xcodeproj::Project::Object::PBXSourcesBuildPhase)
-          build_phase.files.each do |file|
-            if !file.settings.nil? && file.settings.key?(compiler_flags_key)
-              compiler_flags = file.settings[compiler_flags_key]
-              file.settings[compiler_flags_key] = compiler_flags.gsub(/-DOS_OBJECT_USE_OBJC=0\s*/, '')
-            end
-          end
+      target.build_configurations.each do |config|
+            config.build_settings['INFOPLIST_FILE'] = 'Target Support Files/'+target.name+'/'+target.name+'-Info.plist'
         end
-      end
     end
-    project.save()
+
+end
+
+post_install do |installer|
+  info_post_install(installer)
 end
