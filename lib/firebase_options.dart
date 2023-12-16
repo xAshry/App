@@ -67,13 +67,13 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCwis_ZfNlAyihALYEfkERn_8hsZWVdYXA',
-    appId: '1:413817509461:android:754285a0bb153731c926dc',
+    apiKey: 'AIzaSyAXlvhiyCTtY-4ZcBT2a-0FFM4j6zA_a8k',
+    appId: '1:413817509461:ios:4c142ff0b5b8e273c926dc',
     messagingSenderId: '413817509461',
     projectId: 'ashry-81eaa',
-    storageBucket: 'Place your key',
-    androidClientId: 'Place your key',
-    iosClientId: 'Place your key',
-    iosBundleId: 'Place your key',
+    storageBucket: 'ashry-81eaa.appspot.com',
+    androidClientId: '413817509461-b7jbgsaaocifn6gjt21eule3ham9fthg.apps.googleusercontent.com',
+    iosClientId: '413817509461-9lp7b3c5o9oo1vhv1v2bajjdvs8srnn2.apps.googleusercontent.com',
+    iosBundleId: 'com.ashryup.app',
   );
 }
